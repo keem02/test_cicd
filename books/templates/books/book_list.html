@@ -2,6 +2,20 @@
 {% extends 'base.html' %}
  
 {% block content %}
+<div class="alert alert-info">
+    <strong>성능 정보:</strong>
+    소요시간: {{ elapsed_time|floatformat:4 }}초,
+    캐시상태: {{ cache_status }}
+</div>
+
+<div class="mb-3">
+    <a href="?cache=true" class="btn btn-primary">캐시 사용</a>
+    <a href="?cache=false" class="btn btn-secondary">캐시 미사용</a>
+</div>
+
+
+
+
 <h3>도서 목록</h3>
 
 <table class="table">

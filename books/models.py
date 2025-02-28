@@ -21,9 +21,9 @@ class Book(models.Model):
        unique=True,
        verbose_name='ISBN'
    )
-   publisher = models.CharField(
-       max_length=100, 
-       verbose_name='출판사'
+#    publisher = models.CharField(
+#        max_length=100, 
+#        verbose_name='출판사'
    )
    total_quantity = models.PositiveIntegerField( # PositiveIntegerField: 양수만 저장
        default=1,

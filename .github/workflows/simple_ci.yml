@@ -14,7 +14,7 @@ name: Python/Django CI
 
 on:
   push:
-    branches: [ main ]    # main 브랜치에 push할 때
+    branches: [ main ]    # main 브랜치에 push할 때 
   pull_request:
     branches: [ main ]    # main 브랜치로 PR 생성할 때
 

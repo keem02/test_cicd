@@ -72,7 +72,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-        - name: Create .env file   # 3단계
+    - name: Create .env file   # 3단계
       run: |
         echo "DB_NAME=${{ secrets.DB_NAME }}" > .env
         cat .env
